@@ -1,0 +1,43 @@
+<!DOCTYPE html>                                                 <!-- ამით ვაცხადებთ, რომ ეს დოკუმენტი არის HTML5 -->
+<html lang="en">                                                   <!-- ვიწყებთ HTML დოკუმენტს და ვუთითებთ ენის ატრიბუტს -->
+  <head>
+    <title>Lesson 4.3</title>                                           <!-- ეს არის გვერდის სათაური, რომელიც ბრაუზერის ჩანართზე გამოჩნდება -->
+    <link rel="stylesheet" href="./lesson4_style.css" />                 <!-- ვუკავშირებთ CSS ფაილს ვიზუალური სტილისთვის -->
+  </head>
+  <body>
+    <header>                                                            <!-- header სექცია, რომელიც ძირითადად შეიცავს სათაურს -->
+      <h1>Looking at layout</h1>                                       <!-- მთავარი სათაური -->
+    </header>
+    
+    <nav>                                          <!-- ნავიგაციის ზოლი -->
+      <a href="">Home</a>                           <!-- მთავარი გვერდის ბმული -->
+      <a href="">Page 2</a>                          <!-- მეორე გვერდის ბმული -->
+      <a href="">Page 3</a>                           <!-- მესამე გვერდის ბმული -->
+    </nav>
+    
+    <section>                                       <!-- მთავარი კონტენტის სექცია -->
+      <h2>Section heading</h2>                      <!-- სექციის სათაური -->
+      <figure>                                      <!-- სურათის ჩასმა -->
+        <img src="./cake.png" alt="birthday cake" width="200"/>                    <!-- სურათი დაბადების დღის ტორტით -->
+        <figcaption>An image of a birthday cake</figcaption>                  <!-- სურათის აღწერა -->
+      </figure>
+      <p>This is some text within the main section.</p>                        <!-- პარაგრაფი -->
+      <p>This section should contain the most important information on this page.</p>            <!-- მთავარი ინფორმაცია -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>               <!-- სატესტო ტექსტი -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>                 <!-- სატესტო ტექსტი -->
+    </section>
+    
+    <article>                                            <!-- დამოუკიდებელი სტატია -->
+      <h2>Article heading</h2>                           <!-- სტატიის სათაური -->
+      <p>This is a separate article</p>                  <!-- სტატიის შესავალი ტექსტი -->
+      <p>
+        This might be some extra information related to the main section...
+      </p>                            <!-- დამატებითი ინფორმაცია -->
+    </article>
+    
+    <footer>                                  <!-- გვერდის სქოლიო -->
+      <p>This is the footer</p>             <!-- სქოლიოს ტექსტი -->
+      <p>Copyright &copy; 2025</p>          <!-- საავტორო უფლებების აღნიშვნა -->
+    </footer>
+  </body>
+</html>

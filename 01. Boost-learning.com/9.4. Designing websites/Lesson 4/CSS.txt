@@ -1,0 +1,82 @@
+* {                          /* ყველა ელემენტს ვაყენებთ box-sizing: border-box-ს, რათა padding და border არ გაზარდოს ელემენტის მთლიანი ზომა */
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;                         /* ყველა ტექსტისთვის ვიყენებთ "Courier New" შრიფტს */
+}
+
+body, html {                         /* მთელ გვერდს ვაძლევთ სრულ სიგანესა და სიმაღლეს */
+    width: 100vw;
+    height: 100vh;
+    border: 0;                         /* საზღვრის მოცილება */
+    margin: 0;                          /* გარე დაშორების მოცილება */
+    padding: 0;                          /* შიდა დაშორების მოცილება */
+}
+
+header, footer {                          /* header და footer-ის სტილი */
+    text-align: center;                   /* ტექსტის ცენტრალიზება */
+    padding: 16px;                          /* შიდა დაშორება */
+    background-color: #191970;            /* მუქი ლურჯი ფონის ფერი */
+    color: white;                         /* თეთრი ტექსტი */
+    width: 100%;                         /* სრული სიგანე */
+    height: 10%;                        /* სიმაღლის 10% */
+}
+
+header h1 {
+    font-family: sans-serif; /* sans-serif შრიფტი სათაურისთვის */
+    font-weight: 600;              /* ნახევრადმსხვილი ტექსტი */
+    margin: 10px;                 /* გარე დაშორება */
+}
+
+footer p {
+    margin: 10px;                /* გარე დაშორება */
+}
+
+nav {                           /* ნავიგაციის ზოლი */
+    width: 100%;                /* სრული სიგანე */
+    height: 10%;               /* სიმაღლის 10% */
+    background-color: #D3D3D3; /* ღია ნაცრისფერი ფონი */
+}
+
+a {                              /* ლინკების სტილი */
+    text-decoration: none;      /* ხაზგასმის მოცილება */
+    transition: all .2s;        /* გლუვი გადასვლა 0.2 წამში */
+    margin: 20px 20px;          /* გარე დაშორება */
+    display: inline-block;      /* ხაზზე დაბლოკილ ელემენტად ქცევა */
+}
+
+a:hover {                       /* ლინკზე მოუსვლელობის ეფექტი */
+    color: #adadff;             /* ღია იისფერი ფერი */
+}
+
+div {                        /* div ელემენტი */
+    width: 50%;             /* სიგანე 50% */
+    height: 70%;           /* სიმაღლე 70% */
+    float: left;           /* მარცხნივ განლაგება */
+}
+
+section {                    /* section ელემენტი */
+    float: left;             /* მარცხნივ განლაგება */
+    width: 50%;               /* სიგანე 50% */
+    height: 70%;            /* სიმაღლე 70% */
+    padding: 16px;           /* შიდა დაშორება */
+    background-color: #F0FFFF;          /* ღია ცისფერი ფონი */
+}
+
+figure {                          /* figure ელემენტი */
+    float: right;                 /* მარჯვნივ განლაგება */
+    width: 30%;                     /* სიგანე 30% */
+    padding: 16px;                /* შიდა დაშორება */
+    height: auto;                /* ავტომატური სიმაღლე */
+    text-wrap: nowrap;             /* ტექსტი არ გადაიტანოს ახალ ხაზზე */
+}
+
+figure img {                     /* figure-ის შიგნით არსებული სურათები */
+    width: 100%;                  /* სრული სიგანე */
+}
+
+article {                       /* article ელემენტი */
+    width: 50%;                /* სიგანე 50% */
+    height: 70%;               /* სიმაღლე 70% */
+    padding: 16px;             /* შიდა დაშორება */
+    display: inline-block;         /* ხაზზე დაბლოკილი ელემენტი */
+    background-color: #FFFAFA;         /* ღია ვარდისფერი ფონი */
+}
