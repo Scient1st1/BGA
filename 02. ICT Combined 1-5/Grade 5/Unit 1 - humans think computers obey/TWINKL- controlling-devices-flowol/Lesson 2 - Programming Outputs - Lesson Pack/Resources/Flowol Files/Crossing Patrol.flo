@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FLOWCHART VERSION="4.00" NUMPRINTEDPAGESWIDE="2" NUMPRINTEDPAGESHIGH="2" PRINTEDPAGEWIDTH="720" PRINTEDPAGEHEIGHT="960" REDUCETOSINGLEPRINTEDPAGE="TRUE" SHOWBOUNDARIES="FALSE">
+  <LINKERMODULE>
+    <Patrol NAME="Crossing Patrol" SHOWLABELS="TRUE" MIMICWINDOWX="488" MIMICWINDOWY="208" MIMICWINDOWW="400" MIMICWINDOWH="320" />
+  </LINKERMODULE>
+  <MODULES />
+  <PAGE>
+    <SYMBOLS>
+      <STARTSUB_SYMBOL ID="0" X="288" Y="140">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="1" />
+        <LINE TO_ID="1">
+          <VERTEX X="288" Y="152" />
+          <VERTEX X="288" Y="200" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="1" X="288" Y="224">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Crossing Patrol.Top Light" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Crossing Patrol.Bottom Light" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="2">
+          <VERTEX X="288" Y="248" />
+          <VERTEX X="288" Y="284" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="2" X="288" Y="308">
+        <SYMBOLDATA DELAY=".RealConstant.2.00000000" />
+        <LINE TO_ID="3">
+          <VERTEX X="288" Y="332" />
+          <VERTEX X="288" Y="368" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="3" X="288" Y="392">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Crossing Patrol.Top Light" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Crossing Patrol.Bottom Light" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="4">
+          <VERTEX X="288" Y="416" />
+          <VERTEX X="288" Y="452" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="4" X="288" Y="476">
+        <SYMBOLDATA DELAY=".RealConstant.2.00000000" />
+        <LINE TO_ID="1">
+          <VERTEX X="336" Y="476" />
+          <VERTEX X="360" Y="476" />
+          <VERTEX X="360" Y="188" />
+          <VERTEX X="288" Y="188" />
+          <VERTEX X="288" Y="200" />
+        </LINE>
+      </DELAY_SYMBOL>
+    </SYMBOLS>
+    <LABELS />
+  </PAGE>
+</FLOWCHART>

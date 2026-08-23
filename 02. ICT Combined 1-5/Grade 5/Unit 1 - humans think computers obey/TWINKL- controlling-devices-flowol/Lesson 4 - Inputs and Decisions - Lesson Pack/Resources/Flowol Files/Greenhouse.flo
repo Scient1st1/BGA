@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FLOWCHART VERSION="4.00" NUMPRINTEDPAGESWIDE="2" NUMPRINTEDPAGESHIGH="2" PRINTEDPAGEWIDTH="720" PRINTEDPAGEHEIGHT="960" REDUCETOSINGLEPRINTEDPAGE="TRUE" SHOWBOUNDARIES="FALSE">
+  <LINKERMODULE>
+    <GreenH NAME="Greenhouse" SHOWLABELS="TRUE" MIMICWINDOWX="497" MIMICWINDOWY="125" MIMICWINDOWW="400" MIMICWINDOWH="320" />
+  </LINKERMODULE>
+  <MODULES />
+  <PAGE>
+    <SYMBOLS>
+      <STARTSUB_SYMBOL ID="0" X="160" Y="56">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="1" />
+        <LINE TO_ID="1">
+          <VERTEX X="160" Y="68" />
+          <VERTEX X="160" Y="116" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <DECISION_SYMBOL ID="1" X="160" Y="140">
+        <SYMBOLDATA LEFT="Greenhouse.Sun" RIGHT=".RealConstant.50.00000000" OP="IsGreaterThan" />
+        <LINEYES TO_ID="2">
+          <VERTEX X="160" Y="164" />
+          <VERTEX X="160" Y="200" />
+        </LINEYES>
+        <LINENO TO_ID="3">
+          <VERTEX X="220" Y="140" />
+          <VERTEX X="272" Y="140" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <OUTPUT_SYMBOL ID="2" X="160" Y="224">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Greenhouse.Light" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="1">
+          <VERTEX X="160" Y="248" />
+          <VERTEX X="160" Y="260" />
+          <VERTEX X="88" Y="260" />
+          <VERTEX X="88" Y="140" />
+          <VERTEX X="100" Y="140" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <OUTPUT_SYMBOL ID="3" X="320" Y="140">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Greenhouse.Light" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="1">
+          <VERTEX X="368" Y="140" />
+          <VERTEX X="392" Y="140" />
+          <VERTEX X="392" Y="104" />
+          <VERTEX X="160" Y="104" />
+          <VERTEX X="160" Y="116" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="4" X="160" Y="336">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="2" />
+        <LINE TO_ID="5">
+          <VERTEX X="160" Y="348" />
+          <VERTEX X="160" Y="396" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <DECISION_SYMBOL ID="5" X="160" Y="420">
+        <SYMBOLDATA LEFT="Greenhouse.Temp" RIGHT=".RealConstant.30.00000000" OP="IsGreaterThan" />
+        <LINEYES TO_ID="7">
+          <VERTEX X="160" Y="444" />
+          <VERTEX X="160" Y="508" />
+        </LINEYES>
+        <LINENO TO_ID="6">
+          <VERTEX X="220" Y="420" />
+          <VERTEX X="272" Y="420" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <OUTPUT_SYMBOL ID="6" X="320" Y="420">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Greenhouse.Heater" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="5">
+          <VERTEX X="368" Y="420" />
+          <VERTEX X="392" Y="420" />
+          <VERTEX X="392" Y="384" />
+          <VERTEX X="160" Y="384" />
+          <VERTEX X="160" Y="396" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <OUTPUT_SYMBOL ID="7" X="160" Y="532">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Greenhouse.Heater" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="5">
+          <VERTEX X="160" Y="556" />
+          <VERTEX X="160" Y="568" />
+          <VERTEX X="88" Y="568" />
+          <VERTEX X="88" Y="420" />
+          <VERTEX X="100" Y="420" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+    </SYMBOLS>
+    <LABELS />
+  </PAGE>
+</FLOWCHART>

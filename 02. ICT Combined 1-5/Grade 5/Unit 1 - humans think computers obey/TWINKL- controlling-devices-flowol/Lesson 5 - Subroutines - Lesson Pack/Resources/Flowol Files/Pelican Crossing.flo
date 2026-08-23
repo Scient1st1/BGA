@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FLOWCHART VERSION="4.00" NUMPRINTEDPAGESWIDE="2" NUMPRINTEDPAGESHIGH="2" PRINTEDPAGEWIDTH="720" PRINTEDPAGEHEIGHT="960" REDUCETOSINGLEPRINTEDPAGE="TRUE" SHOWBOUNDARIES="FALSE">
+  <LINKERMODULE>
+    <Pelican NAME="Pelican Crossing" SHOWLABELS="TRUE" MIMICWINDOWX="989" MIMICWINDOWY="140" MIMICWINDOWW="400" MIMICWINDOWH="320" />
+  </LINKERMODULE>
+  <MODULES />
+  <PAGE>
+    <SYMBOLS>
+      <STARTSUB_SYMBOL ID="0" X="96" Y="84">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="Stop Cars" />
+        <LINE TO_ID="1">
+          <VERTEX X="96" Y="96" />
+          <VERTEX X="96" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="1" X="96" Y="168">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Amber" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="14">
+          <VERTEX X="96" Y="192" />
+          <VERTEX X="96" Y="228" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="2" X="256" Y="84">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="Walk" />
+        <LINE TO_ID="3">
+          <VERTEX X="256" Y="96" />
+          <VERTEX X="256" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="3" X="256" Y="168">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Wait" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red Man" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="35">
+          <VERTEX X="256" Y="192" />
+          <VERTEX X="256" Y="228" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="4" X="416" Y="84">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="Flash" />
+        <LINE TO_ID="5">
+          <VERTEX X="416" Y="96" />
+          <VERTEX X="416" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="5" X="416" Y="168">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="19">
+          <VERTEX X="416" Y="192" />
+          <VERTEX X="416" Y="228" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="6" X="576" Y="84">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="Cars Go" />
+        <LINE TO_ID="7">
+          <VERTEX X="576" Y="96" />
+          <VERTEX X="576" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="7" X="576" Y="168">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Amber" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="30">
+          <VERTEX X="576" Y="192" />
+          <VERTEX X="576" Y="228" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="8" X="800" Y="84">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="1" />
+        <LINE TO_ID="9">
+          <VERTEX X="800" Y="96" />
+          <VERTEX X="800" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="9" X="800" Y="168">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Amber" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Wait" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red Man" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="10">
+          <VERTEX X="800" Y="192" />
+          <VERTEX X="800" Y="228" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DECISION_SYMBOL ID="10" X="800" Y="252">
+        <SYMBOLDATA LEFT="Pelican Crossing.Push Sw" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="11">
+          <VERTEX X="800" Y="276" />
+          <VERTEX X="800" Y="312" />
+        </LINEYES>
+        <LINENO TO_ID="9">
+          <VERTEX X="860" Y="252" />
+          <VERTEX X="872" Y="252" />
+          <VERTEX X="872" Y="132" />
+          <VERTEX X="800" Y="132" />
+          <VERTEX X="800" Y="144" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <CALLSUB_SYMBOL ID="11" X="800" Y="336">
+        <SYMBOLDATA SUBNAME="Stop Cars" SUBMULTIPLIER="1" />
+        <LINE TO_ID="15">
+          <VERTEX X="800" Y="360" />
+          <VERTEX X="800" Y="396" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="12" X="96" Y="336">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Amber" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="13">
+          <VERTEX X="96" Y="360" />
+          <VERTEX X="96" Y="408" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="13" X="96" Y="420">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <DELAY_SYMBOL ID="14" X="96" Y="252">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="12">
+          <VERTEX X="96" Y="276" />
+          <VERTEX X="96" Y="312" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <CALLSUB_SYMBOL ID="15" X="800" Y="420">
+        <SYMBOLDATA SUBNAME="Walk" SUBMULTIPLIER="1" />
+        <LINE TO_ID="16">
+          <VERTEX X="800" Y="444" />
+          <VERTEX X="800" Y="480" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <CALLSUB_SYMBOL ID="16" X="800" Y="504">
+        <SYMBOLDATA SUBNAME="Flash" SUBMULTIPLIER="1" />
+        <LINE TO_ID="17">
+          <VERTEX X="800" Y="528" />
+          <VERTEX X="800" Y="564" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <CALLSUB_SYMBOL ID="17" X="800" Y="588">
+        <SYMBOLDATA SUBNAME="Cars Go" SUBMULTIPLIER="1" />
+        <LINE TO_ID="10">
+          <VERTEX X="800" Y="612" />
+          <VERTEX X="800" Y="624" />
+          <VERTEX X="728" Y="624" />
+          <VERTEX X="728" Y="252" />
+          <VERTEX X="740" Y="252" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <STARTSUB_SYMBOL ID="18" X="256" Y="336">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <DELAY_SYMBOL ID="19" X="416" Y="252">
+        <SYMBOLDATA DELAY=".RealConstant.0.50000000" />
+        <LINE TO_ID="20">
+          <VERTEX X="416" Y="276" />
+          <VERTEX X="416" Y="312" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="20" X="416" Y="336">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="21">
+          <VERTEX X="416" Y="360" />
+          <VERTEX X="416" Y="396" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="21" X="416" Y="420">
+        <SYMBOLDATA DELAY=".RealConstant.0.50000000" />
+        <LINE TO_ID="22">
+          <VERTEX X="416" Y="444" />
+          <VERTEX X="416" Y="480" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="22" X="416" Y="504">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="23">
+          <VERTEX X="416" Y="528" />
+          <VERTEX X="416" Y="564" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="23" X="416" Y="588">
+        <SYMBOLDATA DELAY=".RealConstant.0.50000000" />
+        <LINE TO_ID="24">
+          <VERTEX X="416" Y="612" />
+          <VERTEX X="416" Y="648" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="24" X="416" Y="672">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="25">
+          <VERTEX X="416" Y="696" />
+          <VERTEX X="416" Y="732" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="25" X="416" Y="756">
+        <SYMBOLDATA DELAY=".RealConstant.0.50000000" />
+        <LINE TO_ID="26">
+          <VERTEX X="416" Y="780" />
+          <VERTEX X="416" Y="816" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="26" X="416" Y="840">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="27">
+          <VERTEX X="416" Y="864" />
+          <VERTEX X="416" Y="900" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="27" X="416" Y="924">
+        <SYMBOLDATA DELAY=".RealConstant.0.50000000" />
+        <LINE TO_ID="33">
+          <VERTEX X="416" Y="948" />
+          <VERTEX X="416" Y="984" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="28" X="416" Y="1176">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Wait" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red Man" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="29">
+          <VERTEX X="416" Y="1200" />
+          <VERTEX X="416" Y="1248" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="29" X="416" Y="1260">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <DELAY_SYMBOL ID="30" X="576" Y="252">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="31">
+          <VERTEX X="576" Y="276" />
+          <VERTEX X="576" Y="312" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="31" X="576" Y="336">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Amber" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Red" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="32">
+          <VERTEX X="576" Y="360" />
+          <VERTEX X="576" Y="408" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="32" X="576" Y="420">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="33" X="416" Y="1008">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Pelican Crossing.Green Man" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="34">
+          <VERTEX X="416" Y="1032" />
+          <VERTEX X="416" Y="1068" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="34" X="416" Y="1092">
+        <SYMBOLDATA DELAY=".RealConstant.0.50000000" />
+        <LINE TO_ID="28">
+          <VERTEX X="416" Y="1116" />
+          <VERTEX X="416" Y="1152" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <DELAY_SYMBOL ID="35" X="256" Y="252">
+        <SYMBOLDATA DELAY=".RealConstant.6.00000000" />
+        <LINE TO_ID="18">
+          <VERTEX X="256" Y="276" />
+          <VERTEX X="256" Y="324" />
+        </LINE>
+      </DELAY_SYMBOL>
+    </SYMBOLS>
+    <LABELS />
+  </PAGE>
+</FLOWCHART>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FLOWCHART VERSION="4.00" NUMPRINTEDPAGESWIDE="2" NUMPRINTEDPAGESHIGH="2" PRINTEDPAGEWIDTH="720" PRINTEDPAGEHEIGHT="960" REDUCETOSINGLEPRINTEDPAGE="TRUE" SHOWBOUNDARIES="FALSE">
+  <LINKERMODULE>
+    <LightHo NAME="Lighthouse" SHOWLABELS="FALSE" MIMICWINDOWX="841" MIMICWINDOWY="90" MIMICWINDOWW="400" MIMICWINDOWH="320" />
+  </LINKERMODULE>
+  <MODULES />
+  <PAGE>
+    <SYMBOLS>
+      <STARTSUB_SYMBOL ID="0" X="256" Y="84">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="1" />
+        <LINE TO_ID="1">
+          <VERTEX X="256" Y="96" />
+          <VERTEX X="256" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <DECISION_SYMBOL ID="1" X="256" Y="168">
+        <SYMBOLDATA LEFT="Lighthouse.Sun" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="3">
+          <VERTEX X="316" Y="168" />
+          <VERTEX X="368" Y="168" />
+        </LINEYES>
+        <LINENO TO_ID="2">
+          <VERTEX X="256" Y="192" />
+          <VERTEX X="256" Y="228" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <OUTPUT_SYMBOL ID="2" X="256" Y="252">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Lighthouse.Lamp" NEWSTATE="TRUE" />
+          <OUTPUT_ACTION OUTPUT="Lighthouse.Foghorn" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="4">
+          <VERTEX X="256" Y="276" />
+          <VERTEX X="256" Y="312" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <OUTPUT_SYMBOL ID="3" X="416" Y="168">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Lighthouse.Lamp" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="1">
+          <VERTEX X="464" Y="168" />
+          <VERTEX X="488" Y="168" />
+          <VERTEX X="488" Y="132" />
+          <VERTEX X="256" Y="132" />
+          <VERTEX X="256" Y="144" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="4" X="256" Y="336">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="5">
+          <VERTEX X="256" Y="360" />
+          <VERTEX X="256" Y="396" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="5" X="256" Y="420">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Lighthouse.Lamp" NEWSTATE="FALSE" />
+          <OUTPUT_ACTION OUTPUT="Lighthouse.Foghorn" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="6">
+          <VERTEX X="256" Y="444" />
+          <VERTEX X="256" Y="480" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="6" X="256" Y="504">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="1">
+          <VERTEX X="256" Y="528" />
+          <VERTEX X="256" Y="540" />
+          <VERTEX X="184" Y="540" />
+          <VERTEX X="184" Y="168" />
+          <VERTEX X="196" Y="168" />
+        </LINE>
+      </DELAY_SYMBOL>
+    </SYMBOLS>
+    <LABELS>
+      <LABEL X="342" Y="224" FONTNAME="Arial" FONTPOINTSIZE="10.00000000" FONTBOLD="FALSE" FONTITALIC="FALSE" FONTUNDERLINE="FALSE">Checks whether sun is on (shining).</LABEL>
+      <LABEL X="344" Y="269" FONTNAME="Arial" FONTPOINTSIZE="10.00000000" FONTBOLD="FALSE" FONTITALIC="FALSE" FONTUNDERLINE="FALSE">If YES, lamp is turned off.</LABEL>
+      <LABEL X="344" Y="314" FONTNAME="Arial" FONTPOINTSIZE="10.00000000" FONTBOLD="FALSE" FONTITALIC="FALSE" FONTUNDERLINE="FALSE">If NO, lamp and foghorn are turned on.</LABEL>
+    </LABELS>
+  </PAGE>
+</FLOWCHART>
