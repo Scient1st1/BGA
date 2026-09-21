@@ -1,0 +1,30 @@
+"Blooket
+Import Template",,,,,,,
+Question #,Question Text,Answer 1,Answer 2,"Answer 3
+(Optional)","Answer 4
+(Optional)","Time Limit (sec)
+(Max: 300 seconds)","Correct Answer(s)
+(Only include Answer #)"
+1,What does this block do?,Asks the player a question,Changes the backdrop,Stops the whole program,Starts the script when the green flag is clicked,20,4
+2,What does this block do?,Says the question out loud only,Adds 1 to the score,Checks if the answer is right,Asks a question and waits for the player to type an answer,20,4
+3,What is stored in this block?,The number of the backdrop,The correct answer to the question,Whatever the player typed in last,The name of the sprite,25,3
+4,What is this block called?,forever,repeat,when clicked,if ... then ... else,20,4
+5,Which group of blocks is this one from?,Looks,Control,Sensing,Operators,20,4
+6,Which group of blocks is this one from?,Operators,Looks,Motion,Sound,20,2
+7,What does this block change?,The player's score,The sprite's size,The background picture on the stage,The sprite's costume,20,3
+8,What does this block change?,How the sprite looks,The score,The backdrop,The question being asked,20,1
+9,What does this block do?,Deletes the score,Takes 1 off the score,Sets the score to 1,Adds 1 to the score,25,4
+10,Why put this block between two costume changes?,To check the answer,To stop the program,So the change is slow enough to see,To make the sprite bigger,25,3
+11,What does this block do?,Makes the sprite flash,Deletes the sprite,Puts the sprite back to how it looked at the start,Clears the backdrop,25,3
+12,What will happen to the sprite?,It will change colour,It will get bigger,It will get smaller,It will disappear,20,2
+13,The player types 20. What does the sprite say?,Try again,Nothing at all,Correct!,20,30,3
+14,The player types 7. What does the sprite say?,7,Correct!,Try again,Nothing at all,30,3
+15,What is missing from this script?,"An else, so it replies to a wrong answer too",An ask block,The correct answer,The green flag block,30,1
+16,Why does this script NOT work?,There are too many blocks,It says Correct! before the player has answered,The green flag is missing,The ask block is the wrong colour,30,2
+17,You need six questions like this one. What is the quickest way?,Type it all out five more times,Build six separate programs,Duplicate this code and change the numbers,Start a new Scratch project,30,3
+18,Which part of the Scratch screen is circled A?,The Stage,The sprite list,The Code Area,The Block Palette,25,1
+19,Which part of the Scratch screen is circled B?,The sprite list,The Code Area,The Block Palette,The Stage,25,2
+20,Which part of the Scratch screen is circled C?,The Code Area,The Block Palette,The sprite list,The Stage,25,2
+21,What is the area circled D used for?,Saving your project,Choosing a backdrop,Choosing which sprite your code belongs to,Changing the question,25,3
+22,Which one is an Operators block?,A,B,C,D,25,3
+23,What does this block do?,Makes the sprite speak in a speech bubble,Makes the sprite play a sound,Checks the answer,Changes the backdrop,20,2

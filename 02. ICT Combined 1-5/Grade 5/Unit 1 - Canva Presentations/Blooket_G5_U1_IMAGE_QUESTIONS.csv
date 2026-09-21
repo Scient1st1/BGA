@@ -1,0 +1,29 @@
+"Blooket
+Import Template",,,,,,,
+Question #,Question Text,Answer 1,Answer 2,"Answer 3
+(Optional)","Answer 4
+(Optional)","Time Limit (sec)
+(Max: 300 seconds)","Correct Answer(s)
+(Only include Answer #)"
+1,Which part of the Canva screen is marked A?,The side panel,The top toolbar,The design name,The canvas,25,1
+2,Which part of the Canva screen is marked B?,The canvas,The templates list,The side panel,The top toolbar,25,1
+3,Which part of the Canva screen is marked C?,The top toolbar,The canvas,The design name,The side panel,25,1
+4,"The toolbar shows a font, a size, B, I and U. What have you just clicked?",A template,The background,An image,A text box,30,4
+5,"The toolbar shows Crop, Flip and Effects. What have you just clicked?",The Templates tab,A text box,The page number,An image,30,4
+6,Why is the top toolbar empty here?,Canva has crashed,The design is finished,Nothing on the design has been clicked yet,You are not logged in,30,3
+7,Which tab would you use to put a photo from YOUR OWN computer into the design?,Text,Elements,Templates,Uploads,25,4
+8,Which tab would you use to add a new text box?,Uploads,Elements,Text,Templates,25,3
+9,Which tab gives you a ready-made design to start from?,Templates,Elements,Text,Uploads,25,1
+10,What are these?,Printing options,Finished presentations by other students,Photos you have uploaded,Templates — ready-made designs you can edit,25,4
+11,Which slide follows good design?,Neither,B,A,Both are equally good,30,2
+12,What is the main problem with slide A?,Not enough colours,It has too much white space,Too many different fonts and colours,The title is missing,30,3
+13,What is wrong with this slide?,The text is far too small to read from the back,It has too few words,The title is too big,Nothing is wrong,30,1
+14,In B the text box was deleted and a new one drawn. What was lost?,"The font, size and position the designer chose",The whole slide,The words themselves,Nothing — they look the same,35,1
+15,What does this button do?,Saves the design,Deletes the slide,Adds a new page,Undoes the last thing you did,20,4
+16,What is missing from slide B?,Nothing is missing,Where the photo came from,A title,A background colour,30,2
+17,Which slide can the audience actually read?,B,A,Neither,Both,25,1
+18,Which one saves you time at the start of a design?,Neither,They take the same time,A,B,25,4
+19,Why should you change what is circled here?,So the template changes,So the design prints faster,So Canva does not delete it,So you can find your design again later,30,4
+20,What does this message tell you about your work?,It has been shared with the class,You must press Save now,It has been printed,"It is already saved online, by itself",25,4
+21,"Following the activity sheet, what goes in the subtitle of your title slide?",By: Your Name,Today's date,A fun fact about you,The name of the template,25,1
+22,Where is this design actually stored?,Nowhere until you print it,"Online, so you can open it on any school computer",On a memory stick,Only on this computer,30,2
